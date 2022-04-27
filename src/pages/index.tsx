@@ -2,7 +2,7 @@
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import { stripe } from "../services/stripe";
-import { SubscribeButton } from "./components/SubscribeButton";
+import { SubscribeButton } from "../components/SubscribeButton";
 import styles from "./home.module.scss";
 
 interface IHomeProps {
@@ -13,8 +13,6 @@ interface IHomeProps {
 }
 
 export default function Home({ product }: IHomeProps) {
-  console.log(product);
-
   return (
     <>
       <Head>
